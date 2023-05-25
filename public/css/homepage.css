@@ -1,0 +1,38 @@
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 60%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 50px 50px 50px 200px;
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: beige;
+}
+
+body {
+    display: grid;
+    height: 97vh;
+    background: url("/img/welcome.jpeg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: orange;
+}
