@@ -19,7 +19,7 @@ Route::get('/', function () {
     return view('profilepage');
 });
 
-Route::get('/ieee', function () {
+Route::get('/about', function () {
     return view('about');
 })->middleware(['auth', 'verified'])->name('login');
 

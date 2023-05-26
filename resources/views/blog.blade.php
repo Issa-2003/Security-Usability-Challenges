@@ -16,6 +16,5 @@
     <li><a href="about">About Me</a></li>
     <li><a href="blog">Blog</a></li>
 </ul>
-{{$HELLO}}
 </body>
 </html>
