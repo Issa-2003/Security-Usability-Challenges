@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ProfilePageController;
+use App\Http\Controllers\TipsController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,16 +17,18 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('profilepage');
+    return view('welcomepage');
 });
 
-Route::get('/about', function () {
-    return view('about');
+Route::get('/api', function () {
+    return view('api');
 })->middleware(['auth', 'verified'])->name('login');
 
-Route::get('/blog', function () {
-    return view('blog');
-})->middleware(['auth', 'verified'])->name('login');
+Route::resource('/tips', TipsController::class);
+
+//Route::get('/tips', function () {
+//    return view('tips/tips');
+//})->middleware(['auth', 'verified'])->name('login');
 
 Route::get('/dashboard', function () {
     return view('dashboard');

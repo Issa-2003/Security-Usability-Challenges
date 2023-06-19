@@ -1,0 +1,86 @@
+/* Container styles */
+.container {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+  }
+
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px; /* Adjust the width as per your preference */
+    margin: 0 auto; /* Centers the form horizontally */
+  }
+
+
+  /* Field styles */
+  .field {
+    margin-bottom: 20px;
+  }
+
+  .label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+
+  .input,
+  .textarea {
+    width: 500px;
+    height: 40px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+
+  /* Button styles */
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+
+  .button:hover {
+    background-color: #45a049;
+  }
+
+  .input.is-invalid {
+    border-color: red;
+    animation: shake 1.0s ease-in-out;
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
+    20%, 40%, 60%, 80% { transform: translateX(5px); }
+    100% { transform: translateX(0); }
+  }
+
+.input.is-filled {
+    border-color: green;
+}
+
+.error-message {
+    color: red;
+    margin-top: 5px;
+    border: 2px solid red;
+    padding: 5px;
+}
+
+
+
